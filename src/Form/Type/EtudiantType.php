@@ -19,11 +19,12 @@ class EtudiantType extends AbstractType implements DataMapperInterface{
     {
         $builder
             ->add("firstname")
-            ->add("email", null, [
+            // un back up ??
+            ->add("email"/*, null , [
                 "constraints" => [
                     new Assert\Email()
                 ]
-            ])
+            ] */)
             ->setDataMapper($this)
         ;
     }
